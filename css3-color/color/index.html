@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+<meta charset="utf-8">
+<title>CSS3 Colors</title>
+<meta name="keywords" content="Overview of CSS3 colors">
+<link rel="stylesheet" href="css/style.css" />
+<script src ="http://code.jquery.com/jquery-1.11.2.js"></script>
+<script src="js/script.js"></script>
+
+
+</head>
+<body>
+    
+    <hr />
+	<h1>CSS3 Colors</h1>
+    <ul>
+        <h2>What's inside?</h2>
+        <li><a href="#clrs">Colors start, You create</a></li>
+        <li><a href="#props">Exploring the core color properties</a></li>
+        <li><a href="#rgb">Understanding RGB</a></li>
+        <li><a href="#rgba">Integrating an alpah channel </a></li>
+        <li><a href="#hsla">Hue. Saturation. Lightness. Alpha</a></li>
+        <li><a href="#profile">Finding color profiles</a></li>
+        <li><a href="#trans">The transparent color</a></li>
+        <li><a href="#current">Working with the current color</a></li>
+        <li><a href="#system">CSS2 System Colors (deprecated)</a></li>
+        <li><a href="#access">Final words and Color Accessibility</a></li>
+        <li>...</li>
+        <h2>Check our links:</h2>
+        <li><a href="http://02geek.com/">Learn more on 02GEEK</a></li>
+        <li><a href="http://02skills.com/">Learn more on 02SKILLS</a></li>
+
+    </ul>
+        <a href="https://color.adobe.com/Theme-1-color-theme-6003773/"><img src="img/clr.png" alt="colors" /></a>
+    	<section class="article">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p class="multi">
+            Lorem  ipsum dolor  sit amet, consectetur adipiscing
+             elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute <b><span>irure dolor in</span></b> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <span>ut aliquip ex ea</span> commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <span>mollit anim id</span> est laborum.
+            </p>
+        </section>
+
+        <section id="clrs" class="clr">
+            <h2>Colors start, You create</h2>
+            <p>Colors have been around the web since the very early days. Before the birth of CSS color attributes were baked into the HTML or into images. As the web evolved and moved into a CSS world colors where extracted and moved into style files. Colors have changed the way they are defined and used over the years. The CSS specification has been updated few times to reflect these changes. This chapter is all about colors. Its intention is to walk through colors and understand them in depth. From a theoretical perspective of how colors work through their implementation in a CSS3 environment.</p>
+
+<p>In June, 2011 the W3 incorporated the recommendation of the CSS Color Module Level 3. In it, the group defined what colors are and grouped together the separate specifications that where introduced in HTML 4.01, CSS2, SVG 1, User Interface for CSS3 specifications and other additions into one document. This document showcases all color capabilities of the web with its some new additions and changes. Not all of the specifications will be incorporated by all user agents – instead, agents can develop according to their native capabilities (how many colors they can implement is based on the device itself and display capabilities).</p>
+
+<p>Before we jump into the video, please download the source files included here. Please drop a line and introduce yourself as you answer this question “why do you think colors are so important? What is your experience with working with colors in general?” </p>
+
+<p><b>Note:</b> Commenting is proven scientifically to improve memory and long term usage of new terms. I urge you to take part join the conversations and start by saying hello as I would love to get to know you and know what your hopes are from this course. So let’s start chatting – drop me a line below.</p> 
+        </section>
+        <section id="props">
+            <h2>Exploring the core color properties</h2>
+            <p>There are many properties in CSS that control the color of things. We talk about all of them throughout our CSS courses. As such, we just wanted to showcase one of them. The core one 'color'. There are many ways to describe what a color is. The most basic way is using a name. In the following lectures we will get to know how color systems work and more importantly how to work with them.  </p>
+            <ul>
+                <li><a href="http://blog.everythingfla.com/2015/05/css3-color-name-values.html" target="_blank">CSS3 Color Name Values</a></li>
+            </ul>
+        </section>
+        <section id="rgb">
+            <h2>Understanding RGB</h2>
+            <p>From the very early days of the web colors where defined with RGB values – Red, Green, Blue. The mix of these three base colors is what creates the millions of colors available on most modern devices. Each color channel has 255 color value options combined into a total of 16,581,375 color combination possibilities. In this lecture we will meet the common ways to describe color in on digital devices using these color profile options. By the way, You might of heard of 16Bit displays or 32Bit – these differences don't really mean much when it comes to digital colors as most modern interfaces only are capable of showing a variety of 16 million colors – monitors with 4 color profiles instead of 3 create a vastly larger color options – but the web doesn't really support more color profiles currently.  In the olden days of the web when monitors where less robust then they are today there was a term called “Web Safe” that was a subset of 255 colors in total. Now days, with most digital display system supporting millions of colors this term is obsolete. By the end of this lecture, you will know how to create color profiles in RGB. </p>
+
+            <div class='console'>
+                <div class="box" data-clr='r'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='255' value='0' name='r'/>
+                </div>
+                <div class="box" data-clr='g'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='255' value='0' name='g'/>
+                </div>
+                <div class="box" data-clr='b'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='255' value='0' name='b'/>
+                </div>
+                <div class='clr'></div>
+                <div class="output">Current Color: <span>
+                    <span>#</span>
+                    <span>00</span>
+                    <span>00</span>
+                    <span>00</span>
+                </span></div>
+            </div>
+            <div class='clr'></div>
+        </section>
+        <section id="rgba">
+            <h2>Integrating an alpah channel</h2>
+            <p>Since the early days of the web, RGB- hexadecimal values were the main way to represent colors. The limitation of using RGB values is that they can only represent 16 million colors and cannot account for alpha channels. In this lecture we will learn more modern way to represent RGB values, this new way will enable us to incorporate alpha channels. By the end of this lesson, you will know everything that is to know about RGB and RGBA colors.</p>
+
+            <div class='console'>
+                <div class="box" data-clr='r'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='255' value='0' name='r'/>
+                </div>
+                <div class="box" data-clr='g'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='255' value='0' name='g'/>
+                </div>
+                <div class="box" data-clr='b'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='255' value='0' name='b'/>
+                </div>
+                <div class="box" data-clr='a'>
+                    <div>alpha channel</div>
+                    <input type='range' step='.01' min='0' max='1' value='1' name='a'/>
+                </div>
+                <div class='clr'></div>
+                <div class="output">Current Color: <span>
+                            <span>rgba</span>(
+                            <span>0</span>,
+                            <span>0</span>,
+                            <span>0</span>
+                            <span>,</span>
+                            <span>1</span>)
+                </span></div>
+            </div>
+            <div class='clr'></div>
+        </section>
+        <section id="hsla">
+            <h2>Hue. Saturation. Lightness. Alpha</h2>
+            <p>The second most common way to describe color on digital devices are based on three controllers: hue, saturation and lightness. RGB colors have a few limitations mainly that there hardware oriented based on 16 million color assumption and its harder to use – easy to understand but really hard to figure out colors with this system. There are a few other color profilers out there but the second one that is supported that is very nattily logical is the HSL. HSL is far more intuitive making it easier to control colors in a human friendly way. </p>
+            <div class='console'>
+                <div class="box" data-clr='h'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='360' value='0' name='h'/>
+                </div>
+                <div class="box" data-clr='s'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='100' value='0' name='s'/>
+                </div>
+                <div class="box" data-clr='l'>
+                    <div>FF</div>
+                    <div>0</div>
+                    <input type='range' min='0' max='100' value='0' name='l'/>
+                </div>
+                <div class="box" data-clr='a'>
+                    <div>alpha channel</div>
+                    <input type='range' step='.01' min='0' max='1' value='1' name='a'/>
+                </div>
+                <div class='clr'></div>
+                <div class="output">Current Color: <span>
+                            <span>hsla</span>(
+                            <span>0</span>,
+                            <span>100</span>%,
+                            <span>50</span>%
+                            <span>,</span>
+                            <span>1</span>)
+                </span></div>
+            </div>
+        </section>
+        <section id="profile">
+            <h2>Finding color profiles</h2>
+            <p>It's one thing to know how to work with colors and it's another to find color profiles that work together. In this lecture we will talk about the easiest way to create color profiles and adding a brand meaning to colors. By the end of this lesson you will be a lot more comfortable with colors as you figure out your own designs.</p>
+            <ul>
+                <li><a href="https://addons.mozilla.org/en-US/firefox/addon/colorzilla/" target="_blank">Color Zilla For FireFox</a></li>
+                <li><a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en" target="_blank">Color Zilla For Chrome</a></li>
+                 <li><a href="https://color.adobe.com/" target="_blank">Adobe Color CC</a></li>
+            </ul>
+        </section>
+        <section id="trans">
+            <h2>The transparent color</h2>
+            <p>TDB.</p>
+        </section>
+        <section id="current">
+            <h2>Working with the current color</h2>
+            <p>So far in the lectures in this chapter we worked with colors by defining them in absolute terms: by name, RGB or HSL values. We now turn our attention to relative colors. The first of them is the currentColor. The currentColor keyword enables us to get a reference to the current color. This can become very handy, we will explore that in this lecture. By the end of this lecture you will know how to work with the currentColor keyword enabling you to create dynamic color assignments. </p>
+        </section>
+         <section id="system">
+            <h2>CSS2 System Colors (deprecated)</h2>
+            <p>In our earlier lectures we talked about colors and web-safe colors. There are some colors that are reserved for the usage of the OS/browser. Through the usage of CSS2 System colors - we can ask the browser for the system colors. With this color set we can incorporate system colors into our design.</p>
+            <p>
+            The CSS2 System colors have been deprecated in favor of CSS3 UI specification (still in development as written). Access to the color scheme of the underlying desktop/operating system can create more easily shady interfaces that could confuse users. As its original intent was to enable smoother interface interactions the feature has been removed from the recommendation in favor of using UI elements. With that said, this feature is still widely supported and as long as the CSS3 UI elements won't be fully accepted and finalized, it will be around to be used. 
+            </p>
+             <ul>
+                <li><a href="https://addons.mozilla.org/en-US/firefox/addon/colorzilla/" target="_blank">The depricated CSS2 System Colors</a></li>
+                
+            </ul>
+        </section>
+        <section id="access">
+            <h2>Final words and Color Accessibility</h2>
+            <p>As we wrap up another title let’s talk about accessibility. We just explored the core features of CSS3 colors. I hope you had a great time. We have many more courses and lectures on HTML5, CSS, CSS3 and much more. So please check them out. Thanks again and please drop a line here and let me know what you think of the title and what would you love to see next? Until next time, thanks Ben!.</p>
+        </section>
+
+
+    	<div id="footer">
+			<a class="everything" href="http://02geek.com/"></a>
+        	<span>goto(<span>'02GEEK'</span>);</span>
+        </div>
+</body>
+</html>

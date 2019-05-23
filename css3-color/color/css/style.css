@@ -1,0 +1,131 @@
+body {
+	background:#6A9027;
+	color:#FAE6C1; 
+	margin:0px; padding:0px;
+	font-size: 14pt;
+	counter-reset: section 0;
+	cursor:url(../img/every.png);
+}
+
+
+a:link{ color: #406826}
+:visited {color:#1D2C25}
+a:active{color:black}
+
+
+.article p > span{ background: yellow; color:red;}
+
+p::first-letter{
+	margin: .15em;
+	font-size: 3em;
+	float:left;
+}
+
+section:not(.article) h2:before{
+	counter-increment: section;
+	content: counter(section) ") ";
+}
+section:not(.article) p{width:600px}
+
+
+:target{
+	background: #716D6D;
+}
+
+li:nth-child(2n+1){
+	background:linear-gradient(90deg, #F2DC9B 15%, transparent 45%);
+}
+
+
+section .console .box {
+	float:left;
+	width:100px;
+	height:100px;
+	padding: 10px;
+	background: #333333;
+
+	border-color: curretColor;
+	border-style: dotted;
+	border-width: 3px;
+	border-radius: 25px;
+	margin-left: 15px;
+}
+section .console input {
+	width:80px;
+}
+section .console .output{background: gray}
+section .console .output span{ font-size:2em;}
+
+
+
+h1, h2, h3 {
+	font-size:2em;
+	text-transform: capitalize;
+	margin: 0px;
+}
+h1{	font-size:3em;
+	background-color: rgba(255,255,255,.2);
+	text-align: center;
+}
+
+h2.inner{font-size:30px}
+h3{font-size:25px}
+
+
+.article, #footer{width: 98%;padding: 1% }
+.article{ /* CSS1 */
+	background-color:rgba(255,0,0,.1)
+	
+	}
+.article p{
+	width:90%;
+	max-width:450px;
+	min-width:360px;
+	background: rgba(100,100,100,.5);
+	margin:0px 10px 5px 0px;
+	
+	padding:40px;
+	padding-right:50px;
+	float: left; 
+	text-align: justify;
+	font-family: 'New Courier',Courier, monospace;
+	text-indent: 3em;
+
+}
+
+
+.clr{
+	clear: both;
+}
+
+#footer{ 
+	background-color:#780e20;
+	width:96%;
+	height: 20px;
+	padding: 2%;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1;
+	clip: rect(17px, 283px, 56px, 18px);
+}
+
+.everything{
+	width:24px;
+	height: 30px;
+
+	background: url(../img/every.png) no-repeat;
+	display: block;
+	float:left;
+	margin-top: -5px;
+	margin-right: 10px;
+}
+.everything:hover{
+	background-position: 0px -30px;
+	cursor: help; 
+}
+
+#footer span span{color:orange;}
+
+
+
+
